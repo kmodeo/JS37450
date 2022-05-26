@@ -7,8 +7,6 @@ let acumula='';
 for (let i=1;i<=ingresarNumero;i++){
 
     acumula += "hola" +"\n" ;
-      //if (ingresarNumero){
-      //console.log("Hola") + "\n";
-   //}
+
 }
 alert(acumula)+"\n";
