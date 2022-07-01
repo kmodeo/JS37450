@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrito</title>
+    <script defer src="js/modal.js" charset="utf-8"></script>
+    <script defer src="js/stock.js" charset="utf-8"></script>
+    <script defer src="js/appCursos.js"></script>
+
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-dark">
+    
+<header id="header" class="header" >
+    <div>
+        <nav class="navbar-top">
+            <ul class="navbar-top-ul">
+                <li class="navbar-top-item">
+                    <a href="#">
+                    <h4 class="logo">LOGO</h2>
+                </li>
+                </a>
+                <li class="navbar-top-item">
+                    <a href="#" class="navbar-top-links">Registro</a>
+                </li>
+                <li class="navbar-top-item">
+                    <a href="#" class="navbar-top-links">Iniciar sesión</a>
+                </li>
+                  <!-- BOTON ABRIR CARRITO -->
+                <p class="control">
+                    <a href="#" id="btn_carrito" class="button is-info">
+                        <span class="icon">
+                            <i class="fa fa-shopping-cart"></i>
+                        </span>
+                        <span class="tag is-gray" id="contadorCarrito">
+                            <strong>0</strong>
+                        </span>
+                    </a>
+                </p>
+            </ul>
+        </nav>
+    </div>
+
+    </header>
+
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                    <div class="six columns">
+                        <div class="contenido-hero">
+                                <h2>Cursos Certificados</h2>
+                                <form action="#" id="busqueda" method="post" class="formulario">
+                                    <input class="u-full-width" type="text" placeholder="Buscar un curso" id="buscador">
+                                    <input type="submit" id="submit-buscador" class="submit-buscador">
+                                </form>
+                        </div>
+                    </div>
+            </div> 
+        </div>
+    </div>
+
+    <div id="lista-cursos" class="container" >
+        <h2 id="encabezado" class="encabezado">Cursos online para trabajar en tecnología</h2>
+      
+    
+        <main id="contenedor-productos">
+            <!--CARGO LOS PRODUCTOS -->
+
+        </main> 
+    
+    </div>
+
+<!--VENTANA MODAL -->
+<div class="modal-contenedor">
+    <div class="modal-carrito">
+        <h3>Carrito</h3>
+        <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+        <div id="carrito-contenedor">
+
+            <!-- CARGO PRODUCTOS EN CARRITO -->
+
+        </div>
+        <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+        <button id="vaciarCarrito" class="button-danger" type="button">Vaciar carrito</button>
+         
+      
+    </div>
+</div>
+
+<!-- FOOTER DEL SITIO -->
+    <footer id="footer" class="footer bg-dark"  >
+        <div class="container">
+            <div class="row" >
+                    <div class="four columns">
+                            <nav id="principal" class="menu">
+                                <a class="enlace" href="#">Para tu Negocio</a>
+                                <a class="enlace" href="#">Conviertete en Instructor</a>
+                                <a class="enlace" href="#">Soporte</a>
+                            </nav>
+                    </div>
+                    <div class="four columns">
+                            <nav id="secundaria" class="menu">
+                                <a class="enlace" href="#">¿Quienes Somos?</a>
+                                <a class="enlace" href="#">Empleo</a>
+                                <a class="enlace" href="#">Blog</a>
+                            </nav>
+                    </div>
+            </div>
+        </div>
+    </footer>
+  
+</body>
+</html>
